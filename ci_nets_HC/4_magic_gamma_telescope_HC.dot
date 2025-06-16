@@ -1,0 +1,36 @@
+strict digraph "" {
+	fLength	[fillcolor=gray,
+		style=filled];
+	fAsym	[fillcolor=gray,
+		style=filled];
+	fLength -> fAsym;
+	fM3Long	[fillcolor=gray,
+		style=filled];
+	fLength -> fM3Long;
+	fAlpha	[fillcolor=gray,
+		style=filled];
+	fLength -> fAlpha;
+	fDist	[fillcolor=gray,
+		style=filled];
+	fLength -> fDist;
+	fWidth	[fillcolor=gray,
+		style=filled];
+	fWidth -> fLength;
+	fSize	[fillcolor=gray,
+		style=filled];
+	fWidth -> fSize;
+	fConc	[fillcolor=gray,
+		style=filled];
+	fWidth -> fConc;
+	fSize -> fLength;
+	fConc -> fSize;
+	fConc1	[fillcolor=gray,
+		style=filled];
+	fConc -> fConc1;
+	fAsym -> fDist;
+	fM3Long -> fAsym;
+	fM3Trans	[fillcolor=gray,
+		style=filled];
+	fM3Trans -> fWidth;
+	fAlpha -> fDist;
+}

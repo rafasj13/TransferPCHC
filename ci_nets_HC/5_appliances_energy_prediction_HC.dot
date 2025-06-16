@@ -1,0 +1,152 @@
+strict digraph "" {
+	T1	[fillcolor=gray,
+		style=filled];
+	RH_1	[fillcolor=gray,
+		style=filled];
+	T1 -> RH_1;
+	T2	[fillcolor=gray,
+		style=filled];
+	T1 -> T2;
+	RH_2	[fillcolor=gray,
+		style=filled];
+	T1 -> RH_2;
+	T5	[fillcolor=gray,
+		style=filled];
+	T1 -> T5;
+	RH_5	[fillcolor=gray,
+		style=filled];
+	T1 -> RH_5;
+	T6	[fillcolor=gray,
+		style=filled];
+	T1 -> T6;
+	T_out	[fillcolor=gray,
+		style=filled];
+	T1 -> T_out;
+	RH_1 -> RH_2;
+	RH_3	[fillcolor=gray,
+		style=filled];
+	RH_1 -> RH_3;
+	T2 -> RH_2;
+	T2 -> T6;
+	RH_7	[fillcolor=gray,
+		style=filled];
+	T2 -> RH_7;
+	RH_9	[fillcolor=gray,
+		style=filled];
+	RH_2 -> RH_9;
+	T3	[fillcolor=gray,
+		style=filled];
+	T3 -> T1;
+	T3 -> RH_1;
+	T3 -> RH_3;
+	RH_4	[fillcolor=gray,
+		style=filled];
+	T3 -> RH_4;
+	T8	[fillcolor=gray,
+		style=filled];
+	T3 -> T8;
+	RH_3 -> RH_5;
+	RH_3 -> RH_9;
+	T4	[fillcolor=gray,
+		style=filled];
+	T4 -> T1;
+	T4 -> RH_1;
+	T4 -> T3;
+	T4 -> T8;
+	RH_4 -> RH_1;
+	RH_4 -> RH_3;
+	RH_4 -> RH_7;
+	RH_4 -> RH_9;
+	RH_5 -> T5;
+	T6 -> RH_3;
+	T6 -> RH_5;
+	RH_8	[fillcolor=gray,
+		style=filled];
+	T6 -> RH_8;
+	T6 -> T_out;
+	RH_6	[fillcolor=gray,
+		style=filled];
+	RH_6 -> T2;
+	RH_6 -> T4;
+	RH_6 -> RH_4;
+	T7	[fillcolor=gray,
+		style=filled];
+	RH_6 -> T7;
+	T9	[fillcolor=gray,
+		style=filled];
+	RH_6 -> T9;
+	RH_6 -> T_out;
+	Press_mm_hg	[fillcolor=gray,
+		style=filled];
+	RH_6 -> Press_mm_hg;
+	RH_out	[fillcolor=gray,
+		style=filled];
+	RH_6 -> RH_out;
+	Windspeed	[fillcolor=gray,
+		style=filled];
+	RH_6 -> Windspeed;
+	T7 -> T1;
+	T7 -> T3;
+	T7 -> T4;
+	T7 -> RH_4;
+	T7 -> RH_7;
+	T7 -> T8;
+	T7 -> RH_8;
+	T7 -> T_out;
+	RH_7 -> RH_1;
+	RH_7 -> RH_2;
+	RH_7 -> RH_5;
+	RH_7 -> RH_8;
+	RH_7 -> RH_9;
+	T8 -> T1;
+	T8 -> T2;
+	T8 -> RH_7;
+	T8 -> RH_8;
+	RH_8 -> T5;
+	RH_8 -> RH_5;
+	T9 -> T1;
+	T9 -> T3;
+	T9 -> RH_3;
+	T9 -> T4;
+	T9 -> T5;
+	T9 -> T6;
+	T9 -> T7;
+	T9 -> T8;
+	T9 -> Press_mm_hg;
+	T9 -> RH_out;
+	T9 -> Windspeed;
+	RH_9 -> RH_8;
+	Tdewpoint	[fillcolor=gray,
+		style=filled];
+	T_out -> Tdewpoint;
+	Press_mm_hg -> T2;
+	Press_mm_hg -> T3;
+	Press_mm_hg -> T4;
+	Press_mm_hg -> RH_4;
+	Press_mm_hg -> T5;
+	Press_mm_hg -> T6;
+	Press_mm_hg -> T7;
+	Press_mm_hg -> T8;
+	Press_mm_hg -> RH_9;
+	Press_mm_hg -> RH_out;
+	Press_mm_hg -> Windspeed;
+	RH_out -> T2;
+	RH_out -> T7;
+	RH_out -> T_out;
+	RH_out -> Tdewpoint;
+	Windspeed -> T3;
+	Windspeed -> T4;
+	Windspeed -> T6;
+	Windspeed -> T7;
+	Windspeed -> RH_out;
+	Visibility	[fillcolor=gray,
+		style=filled];
+	Visibility -> RH_6;
+	Visibility -> T9;
+	Visibility -> Press_mm_hg;
+	Visibility -> RH_out;
+	Visibility -> Windspeed;
+	Tdewpoint -> RH_2;
+	Tdewpoint -> RH_4;
+	Tdewpoint -> RH_7;
+}

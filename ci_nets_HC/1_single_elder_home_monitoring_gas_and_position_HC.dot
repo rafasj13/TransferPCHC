@@ -1,0 +1,50 @@
+strict digraph "" {
+	temperature	[fillcolor=gray,
+		style=filled];
+	humidity	[fillcolor=gray,
+		style=filled];
+	humidity -> temperature;
+	MOX1	[fillcolor=gray,
+		style=filled];
+	humidity -> MOX1;
+	COValue	[fillcolor=gray,
+		style=filled];
+	humidity -> COValue;
+	CO2CosIRValue	[fillcolor=gray,
+		style=filled];
+	CO2CosIRValue -> humidity;
+	CO2MG811Value	[fillcolor=gray,
+		style=filled];
+	CO2CosIRValue -> CO2MG811Value;
+	CO2CosIRValue -> MOX1;
+	MOX2	[fillcolor=gray,
+		style=filled];
+	CO2CosIRValue -> MOX2;
+	MOX3	[fillcolor=gray,
+		style=filled];
+	CO2CosIRValue -> MOX3;
+	MOX4	[fillcolor=gray,
+		style=filled];
+	CO2CosIRValue -> MOX4;
+	CO2CosIRValue -> COValue;
+	CO2MG811Value -> temperature;
+	CO2MG811Value -> humidity;
+	CO2MG811Value -> MOX1;
+	CO2MG811Value -> MOX2;
+	CO2MG811Value -> MOX3;
+	CO2MG811Value -> MOX4;
+	CO2MG811Value -> COValue;
+	MOX1 -> temperature;
+	MOX1 -> MOX4;
+	MOX2 -> temperature;
+	MOX2 -> humidity;
+	MOX2 -> MOX1;
+	MOX2 -> MOX3;
+	MOX2 -> MOX4;
+	MOX2 -> COValue;
+	MOX3 -> humidity;
+	MOX3 -> MOX1;
+	MOX3 -> MOX4;
+	MOX3 -> COValue;
+	MOX4 -> temperature;
+}

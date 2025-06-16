@@ -1,0 +1,30 @@
+strict digraph "" {
+	Profile_mean	[fillcolor=gray,
+		style=filled];
+	Profile_stdev	[fillcolor=gray,
+		style=filled];
+	Profile_mean -> Profile_stdev;
+	Profile_skewness	[fillcolor=gray,
+		style=filled];
+	Profile_mean -> Profile_skewness;
+	Profile_kurtosis	[fillcolor=gray,
+		style=filled];
+	Profile_mean -> Profile_kurtosis;
+	Profile_stdev -> Profile_skewness;
+	Profile_stdev -> Profile_kurtosis;
+	Profile_skewness -> Profile_kurtosis;
+	DM_mean	[fillcolor=gray,
+		style=filled];
+	DM_stdev	[fillcolor=gray,
+		style=filled];
+	DM_mean -> DM_stdev;
+	DM_skewness	[fillcolor=gray,
+		style=filled];
+	DM_mean -> DM_skewness;
+	DM_kurtosis	[fillcolor=gray,
+		style=filled];
+	DM_mean -> DM_kurtosis;
+	DM_stdev -> DM_skewness;
+	DM_stdev -> DM_kurtosis;
+	DM_skewness -> DM_kurtosis;
+}

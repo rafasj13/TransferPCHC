@@ -1,0 +1,25 @@
+strict digraph "" {
+	Global_active_power	[fillcolor=gray,
+		style=filled];
+	Global_reactive_power	[fillcolor=gray,
+		style=filled];
+	Global_active_power -> Global_reactive_power;
+	Voltage	[fillcolor=gray,
+		style=filled];
+	Global_active_power -> Voltage;
+	Global_intensity	[fillcolor=gray,
+		style=filled];
+	Global_active_power -> Global_intensity;
+	Global_reactive_power -> Global_intensity;
+	Voltage -> Global_intensity;
+	Sub_metering_1	[fillcolor=gray,
+		style=filled];
+	Sub_metering_1 -> Global_active_power;
+	Sub_metering_2	[fillcolor=gray,
+		style=filled];
+	Sub_metering_2 -> Global_active_power;
+	Sub_metering_3	[fillcolor=gray,
+		style=filled];
+	Sub_metering_3 -> Global_active_power;
+	Sub_metering_3 -> Voltage;
+}
