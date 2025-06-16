@@ -27,6 +27,6 @@ The plots are obtained from:
 
 ### STATISTICAL TEST: Critical difference diagram
 The Bergmann-Hommel post-hoc is done in R. To get the analysis, the files to run are:
-- plots.ipynb --> There is a section in which the results from the plots are transformed into a specific format for the statistical test
-- critical_diff_bergmann.R --> This file performs the Friedman test with Bergmann-Hommel post-hoc and stores the results (p-vales and ranking). Installation of scmamp_0.2.1.tar.gz  library is needed
-- critical_diff_diag_prep.ipynb --> This file takes the results from R and draws the critical difference diagram
+- 1. plots.ipynb --> There is a section in which the results from the plots are transformed into a specific format for the statistical test
+- 2. critical_diff_bergmann.R --> This file performs the Friedman test with Bergmann-Hommel post-hoc and stores the results (p-vales and ranking). Installation of scmamp_0.2.1.tar.gz  library is needed
+- 3. critical_diff_diag_prep.ipynb --> This file takes the results from R and draws the critical difference diagram
