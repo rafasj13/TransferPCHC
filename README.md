@@ -9,7 +9,8 @@ All the reference models are available. To get the modified sources, run the fol
 - s_synthetic.py for SPBNs (<model>.pickle)
 ### UCI repository
 To get the datasets for these networks, first run "clean_uci.ipynb". Then, the reference HC and PC models, as well as the posterior modifications for the sources, are obtained through:
-- s_uci_ml.py for UCI datasets (<model>.pickle).
+- s_uci_ml.py (<model>.pickle).
+  
 Since the .pickle files are already available, the file can be modified to avoid training each reference again. Thus, just reading the reference and  modifying.
 
 ## RUN experiments 
