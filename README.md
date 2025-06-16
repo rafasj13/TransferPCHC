@@ -11,7 +11,7 @@ All the reference models are available. To get the modified sources, run the fol
 To get the datasets for these networks, first run "clean_uci.ipynb". Then, the reference HC and PC models, as well as the posterior modifications for the sources, are obtained through:
 - s_uci_ml.py (<model>.pickle).
   
-Since the .pickle files are already available, the file can be modified to avoid training each reference again. Thus, just reading the reference and  modifying.
+Since the .pickle files are already available, the file can be modified to avoid training each reference again. Thus, simply reading the reference and getting the arc modifications.
 
 ## RUN experiments 
 In the experiments file, the target and modified source tasks are loaded and fitted (needed PREPARE step). Then, a sample is generated from each task, and Gaussian noise is added to the sources. The file to run is:
